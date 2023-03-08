@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="bean.Customer" table="TBL_CUSTOMER_DETAILS">
+    		<id name="customer_id" column="CUSTOMER_ID" type="integer">
+    			<generator class="assigned"/>
+    		</id>
+    		<property name="mobile" column="MOBILE" type="string"/>
+    		<property name="password" column="PASSWORD" type="string"/>
+    		<property name="email" column="EMAIL" type="string"/>
+    		<property name="address" column="ADDRESS" type="string"/>
+    		<property name="city" column="CITY" type="string"/>
+    		<property name="pin" column="PIN" type="string"/>    		
+    	</class>
+    </hibernate-mapping>

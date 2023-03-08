@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="bean.Order" table="TBL_ORDER_DETAILS">
+    		<id name="id" column="ORDER_ID" type="integer">
+    			<generator class="assigned"/>
+    		</id>
+    		<property name="customer_name" column="CUSTOMER_NAME" type="string"/>
+    		<property name="phone" column="PHONE" type="string"/>
+    		<property name="address" column="ADDRESS" type="string"/>
+    		<property name="book_quantity" column="BOOK_QUANTITY" type="integer"/>
+    		<property name="book_id" column="BOOK_ID" type="integer"/>
+    		<property name="order_date" column="ORDER_DATE" type="string"/>    		
+    	</class>
+    </hibernate-mapping>
